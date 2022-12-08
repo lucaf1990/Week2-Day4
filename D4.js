@@ -155,7 +155,7 @@ const coloreOcchi = [];
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
   let coloreOcchi = starWarsCharacters[i].eye_color;
-  switch (coloreOcchi) {
+  switch (starWarsCharacters[i].eye_color) {
     case "blue":
       eyeColor.blue.push(starWarsCharacters[i]);
       break;
@@ -193,7 +193,6 @@ while (i < starWarsCharacters.length) {
 
 Crea uno switch statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'impotetica astronave contenente i personaggi dell'array "starWarsCharacters"
 (cerca su un motore di ricerca switch case e conditionals)
-
 
 
 Se la massa è inferiore a 500 stampa in console: "Ship is under loaded",
