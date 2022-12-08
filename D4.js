@@ -179,10 +179,22 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
   Usa un while loop per calcolare la massa totale dell'equipaggio
 */
 
+let i = 0;
+let totalMass = 0;
+
+while (i < starWarsCharacters.length) {
+  const mass = starWarsCharacters[i].mass;
+  totalMass = totalMass + parseInt(mass);
+  i++;
+  console.log(totalMass);
+}
+
 /* ESERCIZIO 7
 
 Crea uno switch statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'impotetica astronave contenente i personaggi dell'array "starWarsCharacters"
 (cerca su un motore di ricerca switch case e conditionals)
+
+
 
 Se la massa è inferiore a 500 stampa in console: "Ship is under loaded",
 Se la massa è uguale a 500 stampa in console: "Ship is half loaded",
