@@ -226,21 +226,95 @@ switch (totalMass) {
 }
 console.log;
 /* ESERCIZIO 8
+  Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
+*/
+let variavilefornita = 10;
+if (typeof variavilefornita === "number") {
+  console.log(
+    "il valore inserito è un numero, in particolare:",
+    variavilefornita
+  );
+} else {
+  console.log("il valore inserito NON è un numero ma è: " + variavilefornita);
+}
 
-Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi creare un nuovo array, o tentare la riassegnazione del valore corrispondente)
+/* ESERCIZIO 9
+  Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* EXTRA ESERCIZIO 9
+let num9 = 2221;
+if (num9 % 2 !== 0 || -0) {
+  console.log("il numero fornito dispari");
+} else {
+  console.log("IL numero è pari");
+}
 
-Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome"
-Usa uno più for loop per raggiungere il risultato
-
-(tip: cerca un metodo degli array per rimuovere un elemento)
-
-Una volta fatto, crea un console.log() per controllare la proprietà length di "characters" prima e dopo l'operazione
+/* ESERCIZIO 10
+  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
+  let val = 7
+  if (val < 10) {
+      console.log("Meno di 10");
+    } else if (val < 5) {
+      console.log("Meno di 5");
+    } else {
+      console.log("Uguale a 10 o maggiore");
+    }
 */
 
-/* EXTRA ESERCIZIO 10
-
-Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
+let val = 5;
+if (val < 10 && val > 5) {
+  console.log("Meno di 10");
+} else if (val <= 5) {
+  console.log("Meno o uguale a 5");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
+/* ESERCIZIO 11
+  Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
+
+const me = {
+  name: "John",
+  lastName: "Doe",
+  skills: ["javascript", "html", "css"],
+};
+me.city = "toronto";
+console.log("aggiunto la key 'city'", me);
+
+/* ESERCIZIO 12
+  Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
+*/
+
+delete me.lastName;
+console.log("rimozione della key 'lastname'", me);
+
+/* ESERCIZIO 13
+  Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
+*/
+me.skills.pop();
+console.log("tolto l'ultimo elemento di skils", me);
+
+/* ESERCIZIO 14
+  Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
+*/
+
+const arraydinumeri = [];
+console.log(arraydinumeri);
+arraydinumeri.push(1);
+arraydinumeri.push(2);
+arraydinumeri.push(3);
+arraydinumeri.push(4);
+arraydinumeri.push(5);
+arraydinumeri.push(6);
+arraydinumeri.push(7);
+arraydinumeri.push(8);
+arraydinumeri.push(9);
+arraydinumeri.push(10);
+console.log(arraydinumeri);
+
+/* ESERCIZIO 15
+  Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
+*/
+
+arraydinumeri[arraydinumeri.length - 1] = 100;
+console.log(arraydinumeri);
